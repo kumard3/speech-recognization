@@ -41,7 +41,11 @@ function App() {
     setTimeout(() => model.stopListening(), 10e3);
   };
   if (labels === null) {
-    return <h1>loading</h1>;
+    return (
+      <div className="App">
+        <header className="App-header">Loading...</header>
+      </div>
+    );
   }
   return (
     <div className="App">
